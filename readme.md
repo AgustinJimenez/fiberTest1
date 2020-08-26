@@ -1,5 +1,5 @@
 ### RUN SERVER
 
 ```
-$ go run index.go
+$ go run main.go
 ```
