@@ -1,8 +1,6 @@
 package usersctrl
 
 import (
-	"fmt"
-
 	"github.com/gofiber/fiber"
 )
 
@@ -23,8 +21,8 @@ func Create(c *fiber.Ctx) {
 
 func Store(c *fiber.Ctx) {
 
-	result := c.Param("foo")
-	fmt.Printf("here: %s", result)
+	//result := c.Param("foo")
+	//fmt.Printf("here: %s", result)
 	c.Send("Store Users")
 }
 
