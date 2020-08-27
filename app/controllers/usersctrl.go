@@ -5,7 +5,7 @@ import (
 )
 
 func Index(c *fiber.Ctx) {
-
+	//fmt.Printf(c.Params("*"))
 	c.Send("Index Users")
 }
 
@@ -20,9 +20,6 @@ func Create(c *fiber.Ctx) {
 }
 
 func Store(c *fiber.Ctx) {
-
-	//result := c.Param("foo")
-	//fmt.Printf("here: %s", result)
 	c.Send("Store Users")
 }
 
