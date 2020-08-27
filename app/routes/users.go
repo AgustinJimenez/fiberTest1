@@ -6,7 +6,7 @@ import (
 )
 
 func UsersRoutes(router fiber.Router) {
-	usersRouter := router.Group("users")
+	usersRouter := router.Group("/users")
 	usersRouter.Get("/", usersctrl.Index)
 	usersRouter.Get("/:id", usersctrl.Show)
 	usersRouter.Get("/new", usersctrl.Create)
